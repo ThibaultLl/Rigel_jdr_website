@@ -2,5 +2,433 @@
 {% load static %}
 
 {% block content_wrapper %}
-    <div class="h1">les saucises sont cuitent</div>
+      <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container" data-aos="zoom-in" data-aos-delay="100">
+      <h1>RIGEL</h1>
+      <h2>Soulèvement</h2>
+      <a href="#accueil" class="btn-get-started">Play now</a>
+    </div>
+  </section><!-- End Hero Section -->
+
+  <main id="main">
+
+    <!-- ======= Accueil Section ======= -->
+    <section id="accueil">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+            <h3 class="section-title">Rigel</h3>
+            <p class="section-description">Bonjour ont peut ajouter ce qu'on veut ici super.</p>
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon"><i class="bi bi-briefcase"></i></div>
+              <h4 class="title"><a href="#univers">a voir 1</a></h4>
+              <p class="description">à voir ce qu'on veut mettre ici</p>
+            </div>
+
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon"><i class="bi bi-card-checklist"></i></div>
+              <h4 class="title"><a href="">a voir 2</a></h4>
+              <p class="description">tout pareil</p>
+            </div>
+
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+              <div class="icon"><i class="bi bi-binoculars"></i></div>
+              <h4 class="title"><a href="">a voir 3</a></h4>
+              <p class="description">tout pareil</p>
+            </div>
+
+          </div>
+          <!-- <div class="col-lg-6 background order-lg-2 order-1" data-aos="fade-left" data-aos-delay="100"></div> -->
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Univers Section ======= -->
+    <section id="univers">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h3 class="section-title">Univers</h3>
+          <p class="section-description">Retrouvez tout l'univers de Rigel</p>
+        </div>
+        <div class="row counters">
+
+          <div class="col-lg-3 col-6 text-center">
+            <h4 class="title"><a href="#portfolio">Race</a></h4>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <h4 class="title"><a href="#personnages">Histoire des personnages</a></h4>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <h4 class="title"><a href="#lord">Lord</a></h4>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <h4 class="title"><a href="#artwork">Artwork</a></h4>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Facts Section -->
+
+    <!-- ======= Race Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h3 class="section-title">Race</h3>
+          <p></p>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-Dechus">Déchus</li>
+              <li data-filter=".filter-Deviants">Déviants</li>
+              <li data-filter=".filter-Praeriens">Praériens</li>
+              <li data-filter=".filter-Vortis">Vortis</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Dechus">
+            <img src="{% static 'img/portfolio/Déchus.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Déchus</h4>
+              <p>Histoire</p>
+              <a href="{% static 'img/portfolio/Déchus.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
+              <a href="#" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Praeriens">
+            <img src="{% static 'img/portfolio/portfolio-2.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Praériens</h4>
+              <p>Histoire</p>
+              <a href="{% static 'img/portfolio/portfolio-2.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+              <a href="#" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Vortis">
+            <img src="{% static 'img/portfolio/Vortis.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Vortis</h4>
+              <p>Histoire</p>
+              <a href="{% static 'img/portfolio/Vortis.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
+              <a href="#" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Deviants">
+            <img src="{% static 'img/portfolio/Déviant.png' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Déviants</h4>
+              <p>Histoire</p>
+              <a href="{% static 'img/portfolio/Déviant.png' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
+              <a href="#" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Personnages Section ======= -->
+    <section id="personnages">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h3 class="section-title">Les personnages</h3>
+        </div>
+        <personnage class="row">
+          <div class="col-lg-5 col-md-8">
+            <span id=contenu style=vertical-align:middle></span>
+            <img src="{% static 'img/portfolio/Déviant.png' %}" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-7 col-md-6" data-aos="zoom-in">
+            <h4><center>IVAN CAYNE - LE LIBERATEUR</center></h4>
+            <p>L’histoire se souvient du Libérateur comme un déviant au coeur d’or et d’une passion inégalée. Le leader d’une rébellion qui changea la face du monde.
+              Le Libérateur n’était qu’un simple mineur dans les mines de Shadrock. Fils unique d’une famille pauvre, il ne reçut que très peu d’éducation,
+              pourtant son esprit de justice était déjà présent.<br><br>
+              Le père de Ivan mourra lors d’un accident de travail à la mine alors que Ivan était âgé de dix-huit ans. Cet événement, couplé à la mort de sa mère,
+              enceinte de sept mois avec sa petite soeur quand Ivan avait six ans ont profondément marqué le Libérateur.<br><br>
+              Les rumeurs racontent qu’il fut entraîné par le plus grand maître assassin de l’époque. Mais la réalité est toute autre.
+              La vie des déviants de l’époque était la loi du plus fort, les plus faibles succombaient à la maladie ou était tué par aliénés.<br><br>
+              Dans mes recherches, un autre nom est souvent mentionné avec celui du Libérateur. Celui de Aaron Bell. Selon mes notes, ce dernier était l’ami d’enfance de Ivan,
+              les deux étant originaire du même quartier de Shadrock.<br><br>
+              Les deux hommes grandirent ensemble, formant une amitié qui ne fut jamais brisée, même dans les moments les plus difficiles.
+              Ils rejoignèrent tout deux le clan Boylen, le clan de Déviant le plus puissant de l’époque.</p>
+          </div>
+        </personnage>
+        <personnage class="row">
+          <div class="col-lg-5 col-md-8">
+            <img src="{% static 'img/portfolio/Déchus.jpg' %}" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-7 col-md-6" data-aos="zoom-in">
+            <h4><center>EARL DUCAN - LE MAQUIGNON</center></h4>
+            <p>Dans les faubourgs du quartier portuaire de Rigel, un marchand vous interpelle depuis une allée sombre. Par curiosité, vous décidez de pénétrer dans 
+              cette voie plongée dans la pénombre.<br><br>
+              Dans cette allée, Le Maquignon vous attend, vous proposant des marchandises de haute valeur, à un prix défiant toute concurrence.
+              Sous-estimant le marchand, vous achetez sans réfléchir tout son stock et retournez dans votre cité.<br><br>
+              Seulement, une fois rentré, vous vous rendez compte que la marchandise était trafiquée, vous retournez dans la ruelle mal éclairée,
+              votre bras déjà transformé en épée, prêt à pourfendre ce Déchu ayant osé tromper un Praérien.<br><br>
+              Mais, à l’endroit où se trouvait l’échoppe du Maquignon, il ne reste rien. Aucune trace de la boutique du Maquignon,
+              comme si cette dernière n’avait jamais existé. Le Maquignon a disparu sans laisser aucune trace.<br><br>
+              Le Maquignon, de son vrai nom Earl Duncan, était déjà reparti, se cachant sous un autre nom, prêt à tromper sa prochaine victime.
+              Mais ce dernier n’étant pas dupe, il tenta de capturer le Maquignon, afin de le faire payer pour ses nombreux crimes.<br><br>
+              Le Maquignon n'eut guère d’autre choix que de se battre, chose à laquelle il était habitué depuis son enfance en temps que cadet de 3 frères.
+              Utilisant sa vivacité, développée grâce aux multiples combats avec ses frères plus puissants mais moins agiles, ainsi que son bras alimenté par l’Orion,
+              le Maquignon réussit à faire armes égales avec vous.<br><br>
+              Seulement, sentant son endurance faiblir, il décide de jouer sa dernière carte, la tromperie. Feignant une peur grandissante, il prend la fuite,
+              vous entraînant avec lui dans les ruelles désertes et mal famées du port de RIGEL. Se servant de sa connaissance des lieux,
+              il vous entraîne jusque dans un cul-de-sac, faisant signe aux autres membres de son groupe de résistants pour vous vaincre avec l’avantage du nombre.<br><br>
+              Victorieux, le Maquignon retourne à son occupation de marchand, laissant à ses compagnons, le soin de ramener le butin de leur attaque dans leur base cachée.
+              Car en effet, le Maquignon est plus qu’un simple escroc, dans les souterrains de la Capitale, une rébellion se prépare, et le Maquignon en est le poing armé...
+              “Vous ne le savez pas encore, mais votre destin est déjà scellé”</p>
+          </div>
+        </personnage>
+        <personnage class="row">
+          <div class="col-lg-5 col-md-8">
+            <img src="{% static 'img/portfolio/Déviant.jpg' %}" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-7 col-md-8" data-aos="zoom-in">
+            <h4><center>NEVILLE - LE SURNATUREL</center></h4>
+            <p>Adelsbeck… Une cité de déviant perdue dans les montagnes de Shanrath. Au premier abord, cette cité semble tout à fait normale,
+              mais elle est le lieu de naissance d’une des personnes les plus redoutées de notre histoire.<br><br>
+              Ce Monstre, du nom de Neville, n’était qu’à l’origine qu’un humble chasseur, passant ses journées dans les bois enneigés à la recherche de proies à ramener à sa cité
+              afin de lui permettre de survivre aux conditions rudes de la montagne.<br><br>
+              Le Monstre faisait partie du clan Ayton, un clan puissant, mais restreint de par sa situation géographique et de par sa situation sociétale. En effet,
+              le clan Ayton était reconnu pour sa brutalité, et le processus pour rejoindre l’élite du clan se démarque par sa violence et son inhumanité.
+              Les recrues étaient rassemblées dans une arène, et s’affrontaient dans un combat sanglant et seuls les deux derniers survivants étaient acceptés dans le clan.<br><br>
+              Sur les 27 prétendants, le Monstre élimina à lui seul 20 personnes au jeune âge de 15 ans, le plus jeune candidat de cette année,
+              se démarquant par son côté sadique et la vitesse à laquelle il se débarrassa de ses adversaires.<br><br>
+              Au fil des ans, sous la tutelle de Keith Ayton, le chef de clan, les habilités au combat de Neville ne firent que s'affûter, étant déjà un combattant surdoué,
+              il devint une véritable machine à tuer, capable de vaincre n’importe quel ennemi, y compris Ayton lui-même.<br><br>
+              Contrairement à ce que son surnom peut suggérer, Neville, n’est pas qu’une bête impulsive assoiffée de sang. Au contraire,
+              toutes les personnes qui ont pu côtoyer l’homme racontent qu’il était au contraire quelqu'un de très posé et même doux en dehors du champ de bataille.
+              Certains racontent même que le Monstre était un pére de famille plein de bonté envers sa femme et ses 2 enfants.<br><br>
+              Lorsque que le combat entre Déviant et Praeriens commença, Neville fut plus que partant pour rejoindre le conflit,
+              et ajouter des Praeriens à sa longue liste de victimes…<br><br>
+              “Personne ne peut m’échapper”</p>
+          </div>
+        </personnage>
+        <personnage class="row">
+          <div class="col-lg-5 col-md-8">
+            <img src="{% static 'img/portfolio/Déviant.jpg' %}" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-7 col-md-8" data-aos="zoom-in">
+            <h4><center>WILLIAM REDGRAVE - LE TRAITRE</center></h4>
+            <p>Assis à mon bureau, le chant des oiseaux au loin bercent mon esprit. Le son du feu craquelant à ma droite,
+              une tasse de thé fumante à ma gauche. Ma plume en main, je me mets à écrire mes mémoires.<br><br>
+              J’écris à propos de ce jour où, depuis mon château de marbre, ma perception de notre société fut changée à jamais.<br><br>
+              Je me souviendrais toujours de ce moment, où j'ai découvert le vrai sens du mot “misère”, le sens du mot “inégalité” ainsi que le sens du mot “justice”.<br><br>
+              Ma ville de Fantohln, est peuplée quasi-uniquement de Praeriens, au statut similaire au mien. J’ai la chance de n’avoir jamais connu la faim,
+              le froid ou la misère entre ces murs de nacre.<br><br>
+              Jusqu’au jour où, en voyage d’affaire à Rasah, nous rencontrions sur notre chemin, dans les montagnes de Shanrath, une citée perdue dans les neiges éternelles.<br><br>
+              Cette cité, peuplée uniquement de Déchus, tombait en ruines, les murs de pierres ne faisant rien pour empêcher le froid de pénétrer dans les habitations.<br><br>
+              Mais j’étais loin d’imaginer l’horreur qui me frappa lorsque je vis le visage des hommes habitant ce lieu cauchemardesque.<br><br>
+              Pour la première fois de ma vie, je vis ce que le froid, la faim et la misère était. Et cette vision me hante encore aujourd’hui. Pourtant,
+              mes compagnons ne semblaient point concernés par cette vision. Au contraire, ils restèrent indifférent, comme si ces personnes méritaient leur pauvre sort.<br><br>
+              De retour au sein des murs blancs de Fantohln, je suis allé plaider au dirigeant de la ville afin d’aider les miséreux des montagnes.
+              Ma requête fut hélas rejetée, accompagnée de menaces de bannissement de la cité.<br><br>
+              Au moment où ma plume toucha la page blanche pour conter cette histoire, Christian, mon majordome qui est également mon ami d’enfance,
+              rentre dans mon bureau, me prévenant de l’arrivée d’un courrier provenant de la Capitale. Une rébellion se prépare, les Déchus veulent renverser l’équilibre établi, et il semblerait que les Déviants veulent les rejoindre.<br><br>
+              Ma chance de rétablir la justice est enfin arrivée, je demande à Christian de préparer ma monture afin de faire route vers Rigel. 
+              Je pars de bon matin, l’aube pointant à la cime des arbres tandis que les chants des oiseaux accompagnent mon départ.<br><br>
+              “Ma lame ne cherche point le sang, mais la Justice”</p>
+          </div>
+        </personnage>
+        <personnage class="row">
+          <div class="col-lg-5 col-md-8">
+            <img src="{% static 'img/portfolio/Vortis.jpg' %}" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-7 col-md-8" data-aos="zoom-in">
+            <h4><center>TUATHA AIRMAID - LA VALKYRIE</center></h4>
+            <p>Une nuit sans lune, pas l’ombre d’un chat dans les rues, ni le moindre bruit. Soudan, un cri strident brise ce silence apaisant.
+              Le cri très distinct d’un homme en souffrance.<br><br>
+              Ce cri résonne dans les rues désertes de Neerthar, la cité-pénitentiaire. C’est dans cette ville isolée que La Valkyrie fut élevée.<br><br>
+              Tuatha Airmed, nommée après l’une des plus grandes Vortis de son temps, passa toute son enfance dans cette ville aux murs fortifiés.
+              Une enfance dédiée à l’art du combat.<br><br>
+              Depuis son plus jeune âge, La Valkyrie fut entraînée afin de devenir la plus puissante Vortis au monde. Malheureusement, tout ne se passera pas comme prévu pour Tuatha.
+              En effet, en raison de la nature très stricte de son éducation, les punitions corporelles étaient très fréquentes et malgré le fait qu’elle ne fût jamais punie,
+              la simple vision de ces punitions finirent par développer chez elle une Hématophobie, une phobie du sang.<br><br>
+              Elle finit finalement par rejoindre un groupe d’élite, spécialisé dans l’interrogation dans la capitale. Loin de sa ville natale,
+              Tuatha pensait pouvoir échapper à sa phobie, mais la réalité fut toute autre. En effet, le groupe d’interrogation n’était pas moins cruel et sanglant dans ses
+              méthodes que les geôliers de Neerthar.<br><br>
+              Mutilations, flagellations, fractures dentaires… Tant de méthodes de tortures inutiles employées par le groupe dans la seule optique de prendre du plaisir.
+              Car les Vortis n’avaient pas besoin de tant de violence pour obtenir les informations. Leurs capacités psychiques étant amplement suffisantes.<br><br>
+              Mais la violence ne cessa point. Et lorsque un groupe de déviants se faufile dans Rigel, ce cycle éternel de violence et de sang se répétant une nouvelle fois.
+              Mais lorsque son groupe fut massacré, un choix s’offrit à elle. Quitter son camp et rejoindre la résistance montante et s’éloigner des conflits,
+              ou rester sur le champ de bataille et mourir de la main de ces déviants.<br>
+              Son choix fut rapide.<br><br>
+              “Mes yeux renferment la clé de vos souvenirs”</p>
+          </div>
+        </personnage>
+      </div>
+    </section><!-- End Personnages Section -->
+
+    <!-- ======= Call To Action Section ======= -->
+    <section id="call-to-action">
+      <div class="container">
+        <div class="row" data-aos="zoom-in">
+          <div class="col-lg-9 text-center text-lg-start">
+            <h3 class="cta-title">Call To Action</h3>
+            <p class="cta-text"> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          <div class="col-lg-3 cta-btn-container text-center">
+            <a class="cta-btn align-middle" href="#">Call To Action</a>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Call To Action Section -->
+
+    <!-- ======= Team Section ======= -->
+    <section id="team">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h3 class="section-title">Team</h3>
+          <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="member" data-aos="fade-up" data-aos-delay="100">
+              <div class="pic"><img src="{% static 'img/team-1.jpg' %}" alt=""></div>
+              <h4>Thibault LEDANOIS</h4>
+              <span>Chef de projet</span>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member" data-aos="fade-up" data-aos-delay="200">
+              <div class="pic"><img src="{% static 'img/team-2.jpg' %}" alt=""></div>
+              <h4>Rémy THIBAUDEAU</h4>
+              <span>Team manager & Dev</span>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member" data-aos="fade-up" data-aos-delay="300">
+              <div class="pic"><img src="{% static 'img/team-3.jpg' %}" alt=""></div>
+              <h4>William Anderson</h4>
+              <span>CTO</span>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member" data-aos="fade-up" data-aos-delay="400">
+              <div class="pic"><img src="{% static 'img/team-4.jpg' %}" alt=""></div>
+              <h4>Amanda Jepson</h4>
+              <span>Accountant</span>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact">
+      <div class="container">
+        <div class="section-header">
+          <h3 class="section-title">Contact</h3>
+          <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+        </div>
+      </div>
+
+      <!-- Uncomment below if you wan to use dynamic maps -->
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22864.11283411948!2d-73.96468908098944!3d40.630720240038435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sbg!4v1540447494452" width="100%" height="380" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+      <div class="container mt-5">
+        <div class="row justify-content-center">
+
+          <div class="col-lg-3 col-md-4">
+
+            <div class="info">
+              <div>
+                <i class="bi bi-geo-alt"></i>
+                <p>A108 Adam Street<br>New York, NY 535022</p>
+              </div>
+
+              <div>
+                <i class="bi bi-envelope"></i>
+                <p>info@example.com</p>
+              </div>
+
+              <div>
+                <i class="bi bi-phone"></i>
+                <p>+1 5589 55488 55s</p>
+              </div>
+            </div>
+
+            <div class="social-links">
+              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
+
+          </div>
+
+          <div class="col-lg-5 col-md-8">
+            <div class="form">
+              <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                <div class="form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group mt-3">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group mt-3">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                </div>
+                <div class="form-group mt-3">
+                  <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                </div>
+                <div class="my-3">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                </div>
+                <div class="text-center"><button type="submit">Send Message</button></div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
 {% endblock %}

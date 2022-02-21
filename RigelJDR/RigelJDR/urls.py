@@ -10,6 +10,6 @@ urlpatterns = [
     path('ressources/', include('ressources.urls')),
     path('team/', include('team.urls')),
     path('univers/', include('univers.urls')),
-    re_path('^$',views.index,name='home'),
+    re_path('^$',views.accueil,name='home'),
     path('admin/', admin.site.urls),
 ]
