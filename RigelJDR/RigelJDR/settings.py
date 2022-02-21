@@ -37,7 +37,15 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+#pages
     'home.apps.HomeConfig',
+    'univers.apps.UniversConfig',
+    'contact.apps.ContactConfig',
+    'jeu.apps.JeuConfig',
+    'outils.apps.OutilsConfig',
+    'ressources.apps.RessourcesConfig',
+    'team.apps.TeamConfig',
 ]
 
 MIDDLEWARE = [
@@ -55,7 +63,7 @@ ROOT_URLCONF = 'RigelJDR.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates'),],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
