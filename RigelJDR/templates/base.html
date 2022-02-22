@@ -11,8 +11,8 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="{% static 'img/Rigel_logo.png' %}" rel="icon">
+  <link href="{% static 'img/Rigel_logo.png' %}" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700" rel="stylesheet">
@@ -24,12 +24,13 @@
   <link href="{% static 'vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
   <link href="{% static 'vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
   <link href="{% static 'vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+  
 
   <!-- Template Main CSS File -->
   <link href="{% static 'css/style.css' %}" rel="stylesheet">
   <style>
   .contenu {
-    margin-top: 6%;
+    margin-top: 8%;
   }</style>
 </head>
 
@@ -37,7 +38,7 @@
 
   <div class="wrapper">
     <!-- ======= Header ======= -->
-    <header id="header" class="fixed-top d-flex align-items-center">
+    <header id="header" class="fixed-top d-flex align-items-center header-transparent">
       <div class="container d-flex justify-content-between align-items-center">
   
         <div id="logo">
@@ -51,13 +52,12 @@
             <li><a class="nav-link scrollto" href="{% url 'home:accueil' %}">Accueil</a></li>
             <li class="dropdown"><a href="{% url 'univers:univers' %}"><span>Univers</span> <i class="bi bi-chevron-down"></i></a>
               <ul>
-                <li><a href="#portfolio">Race</a></li>
-                <li><a href="#personnages">Histoire des personnages</a></li>
+                <li><a href="{% url 'univers:univers' %}">Race</a></li>
+                <li><a href="{% url 'univers:univers' %}#personnages">Histoire des personnages</a></li>
                 <li><a href="#lord">Lord</a></li>
                 <li><a href="#artwork">Artwork</a></li>
               </ul>
             </li>
-            <li><a class="nav-link scrollto" href="{% url 'jeu:jeu' %}">Jeu</a></li>
             <li class="dropdown"><a href="{% url 'outils:outils' %}"><span>Outils</span> <i class="bi bi-chevron-down"></i></a>
               <ul>
                 <li><a href="#dice">Lancé de Dé</a></li>
@@ -74,7 +74,6 @@
                 <li><a href="#fiche-perso-blank">Fiche personnage vierge</a></li>
               </ul>
             </li>
-            <li><a class="nav-link scrollto" href="{% url 'team:team' %}">Team</a></li>
             <li><a class="nav-link scrollto" href="{% url 'contact:contact' %}">Contact</a></li>
           </ul>
           <i class="bi bi-list mobile-nav-toggle"></i>
