@@ -1,0 +1,96 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content_wrapper %}
+<div class="contenu">
+    <!-- ======= Univers Section ======= -->
+    <section id="race">
+        <div class="container" data-aos="fade-up">
+          <div class="section-header">
+            <h3 class="section-title">Race</h3>
+            <p class="section-description">Retrouvez lesdifférentes races de l'univers</p>
+          </div>
+          <div class="row counters">
+  
+            <div class="col-lg-3 col-6 text-center">
+              <h4 class="title"><a href="#dechus">Déchus</a></h4>
+            </div>
+  
+            <div class="col-lg-3 col-6 text-center">
+              <h4 class="title"><a href="#praeriens">Praériens</a></h4>
+            </div>
+  
+            <div class="col-lg-3 col-6 text-center">
+              <h4 class="title"><a href="#deviants">Déviants</a></h4>
+            </div>
+  
+            <div class="col-lg-3 col-6 text-center">
+              <h4 class="title"><a href="#vortis">Vortis</a></h4>
+            </div>
+  
+          </div>
+  
+        </div>
+      </section>
+
+      <section id="dechus">
+        <div class="container" data-aos="fade-up">
+          <dechus class="row">
+            <div class="col-lg-5 col-md-8">
+              <span id=contenu style=vertical-align:middle></span>
+              <img src="{% static 'img/portfolio/Déchus.jpg' %}" class="img-fluid" alt="">
+            </div>
+            <div class="col-lg-7 col-md-6" data-aos="zoom-in">
+              <h4><center>Les Déchus</center></h4>
+              <p>work in progress</p>
+            </div>
+        </dechus>
+        </div>
+      </section><!-- End Dechus Section -->
+
+      <section id="praeriens">
+        <div class="container" data-aos="fade-up">
+          <praeriens class="row">
+            <div class="col-lg-5 col-md-8">
+              <span id=contenu style=vertical-align:middle></span>
+              <img src="{% static 'img/portfolio/Praériens.jpg' %}" class="img-fluid" alt="">
+            </div>
+            <div class="col-lg-7 col-md-6" data-aos="zoom-in">
+              <h4><center>Les Praériens</center></h4>
+              <p>work in progress</p>
+            </div>
+          </praeriens>
+        </div>
+      </section><!-- End Praeriens Section -->
+
+      <section id="deviants">
+        <div class="container" data-aos="fade-up">
+          <deviants class="row">
+            <div class="col-lg-5 col-md-8">
+              <span id=contenu style=vertical-align:middle></span>
+              <img src="{% static 'img/portfolio/Déviant.png' %}" class="img-fluid" alt="">
+            </div>
+            <div class="col-lg-7 col-md-6" data-aos="zoom-in">
+              <h4><center>Les Déviants</center></h4>
+              <p>work in progress</p>
+            </div>
+          </deviants>
+        </div>
+      </section><!-- End Deviants Section -->
+
+      <section id="vortis">
+        <div class="container" data-aos="fade-up">
+          <vortis class="row">
+            <div class="col-lg-5 col-md-8">
+              <span id=contenu style=vertical-align:middle></span>
+              <img src="{% static 'img/portfolio/Vortis.jpg' %}" class="img-fluid" alt="">
+            </div>
+            <div class="col-lg-7 col-md-6" data-aos="zoom-in">
+              <h4><center>Les Vortis</center></h4>
+              <p>work in progress</p>
+            </div>
+        </vortis>
+        </div>
+      </section><!-- End Vortis Section -->
+</div>
+{% endblock %}

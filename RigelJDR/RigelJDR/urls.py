@@ -12,4 +12,6 @@ urlpatterns = [
     path('univers/', include('univers.urls')),
     re_path('^$',views.accueil,name='home'),
     path('admin/', admin.site.urls),
+    path('race/', include('race.urls')),
+    path('personnages/', include('personnages.urls')),
 ]

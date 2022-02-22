@@ -46,6 +46,8 @@ INSTALLED_APPS = [
     'outils.apps.OutilsConfig',
     'ressources.apps.RessourcesConfig',
     'team.apps.TeamConfig',
+    'race.apps.RaceConfig',
+    'personnages.apps.PersonnagesConfig',
 ]
 
 MIDDLEWARE = [
